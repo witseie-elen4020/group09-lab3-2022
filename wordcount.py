@@ -4,7 +4,7 @@ import string
 import re
 
 Apostrophe = re.compile(r"[\w']+") #looking for words like "word", "word's"
-stopwords = open('stopWords.txt','r').read().split()
+stopwords = open('./parameters/stopwords.txt','r').read().split()
 
 class WordCount(mrs.MapReduce):
     """Count the number of occurrences of each word in a set of documents.
