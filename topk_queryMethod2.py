@@ -1,6 +1,8 @@
 import sys
 import os
 import string
+import mrs
+
 
 def sortList(text):
     return sorted(text, key= lambda x: x[1], reverse=True)
@@ -18,7 +20,7 @@ def process():
     for i in text:
         text[text.index(i)] = tuple(i.split())
         
-    #print(text)
+
     return text
 
 

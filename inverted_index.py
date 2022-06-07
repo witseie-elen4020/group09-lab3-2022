@@ -1,5 +1,6 @@
 import mrs
 import string
+import sys
 
 class WordIndex(mrs.MapReduce):
     def map(self,line_num,line_text):
@@ -30,5 +31,5 @@ class WordIndex(mrs.MapReduce):
         yield lineNumbers
 
 if __name__ == '__main__':
-        mrs.main(WordIndex)
+     hold  =  mrs.main(WordIndex)
 
